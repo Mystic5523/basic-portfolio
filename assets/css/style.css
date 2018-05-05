@@ -38,6 +38,7 @@ header {
     padding: 1em;
     border: 1px red solid;
     background-color: #4aaaa5;
+    float: left;
 }
 
 h1#name {
@@ -88,10 +89,25 @@ p{
     color: #777777;
 }
 
-h2#link {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+a:link, a:visited {
+    background-color: white;
     color: #777777;
-    Text-align: right;
-    
-    
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #777777;
+}
+
+.nav {
+    text-align: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
